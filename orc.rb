@@ -5,21 +5,21 @@
 class Orc < Formula
   desc "Deterministic agent orchestrator"
   homepage "https://github.com/jorge-barreto/orc"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.1/orc_0.1.1_darwin_amd64.tar.gz"
-      sha256 "9e2a9f5966405870d3bd6ce55a958c3d0f9bc8150d3e53bcc87e5339bb88c4d4"
+      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.2/orc_0.1.2_darwin_amd64.tar.gz"
+      sha256 "6e4399f15c2f1af49c2e304bfe3758baff4b3ad0ac4e7074d359ea5f5479547a"
 
       def install
         bin.install "orc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.1/orc_0.1.1_darwin_arm64.tar.gz"
-      sha256 "8d7121db51e4e79a28a1ae3253d0c470a8e955172a62a4b0d8dc2c7337c861d5"
+      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.2/orc_0.1.2_darwin_arm64.tar.gz"
+      sha256 "11f97cbc94db1c3336b171e2c2e803e61001cad00b7a3c63baf255375c4a4537"
 
       def install
         bin.install "orc"
@@ -29,15 +29,15 @@ class Orc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.1/orc_0.1.1_linux_amd64.tar.gz"
-      sha256 "1f7d0acfc14efa4bf4149b6d91c9cc510746ce2c12fe511c4685b2430091c26a"
+      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.2/orc_0.1.2_linux_amd64.tar.gz"
+      sha256 "5f2680a2623aa9831cea19bf89d3bcaafd48ac8fe4e65994473048a9ed41ba23"
       def install
         bin.install "orc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.1/orc_0.1.1_linux_arm64.tar.gz"
-      sha256 "c8a583f1ddec199eb40bd3d9a25102cefd95cad4d0ffc67abfd895765f5e246b"
+      url "https://github.com/jorge-barreto/orc/releases/download/v0.1.2/orc_0.1.2_linux_arm64.tar.gz"
+      sha256 "d46137732415fca9924c7e15e1889f57a7c4d559cce9d937f0698f5b739e1ab8"
       def install
         bin.install "orc"
       end
