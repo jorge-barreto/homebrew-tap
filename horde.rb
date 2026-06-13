@@ -5,21 +5,21 @@
 class Horde < Formula
   desc "Cloud launcher for orc workflows"
   homepage "https://github.com/jorge-barreto/horde"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jorge-barreto/horde/releases/download/v0.8.0/horde_0.8.0_darwin_amd64.tar.gz"
-      sha256 "b4b004c0e146e59fe11cc05edef0cd40e2265d235072e60c6c242f241373482c"
+      url "https://github.com/jorge-barreto/horde/releases/download/v0.9.0/horde_0.9.0_darwin_amd64.tar.gz"
+      sha256 "fcfac9faa9436c0e3ffc9db65ec38bd89d604dbe23e65743bd93e1b3e85e32e1"
 
       def install
         bin.install "horde"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jorge-barreto/horde/releases/download/v0.8.0/horde_0.8.0_darwin_arm64.tar.gz"
-      sha256 "e3cb5420bc51353eb2d755a38d88129dddaabaff51312827af94b008429a0b02"
+      url "https://github.com/jorge-barreto/horde/releases/download/v0.9.0/horde_0.9.0_darwin_arm64.tar.gz"
+      sha256 "225c8306412b4d9403a56f06aacc7374ee75e71f4ba623258031d0030512a484"
 
       def install
         bin.install "horde"
@@ -29,15 +29,15 @@ class Horde < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorge-barreto/horde/releases/download/v0.8.0/horde_0.8.0_linux_amd64.tar.gz"
-      sha256 "3008b9bf850410f88cfd3125559efce1118f5e0d4e9f8a51db636d21dba14a8c"
+      url "https://github.com/jorge-barreto/horde/releases/download/v0.9.0/horde_0.9.0_linux_amd64.tar.gz"
+      sha256 "c8f603807a9e338ccc614d1b9fa617dc3ec704df7b89c835b9f5d6eb94529342"
       def install
         bin.install "horde"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jorge-barreto/horde/releases/download/v0.8.0/horde_0.8.0_linux_arm64.tar.gz"
-      sha256 "4bb134705b20b74dfd93d8198883ce67dee0a2ff640aff25db12e38910949590"
+      url "https://github.com/jorge-barreto/horde/releases/download/v0.9.0/horde_0.9.0_linux_arm64.tar.gz"
+      sha256 "84fe98a1acf799c44381becc1f0f43156e6b52139f2229a21450c2cb2f2d5aab"
       def install
         bin.install "horde"
       end
